@@ -1,7 +1,7 @@
 package LearningUsingThreadclass;
 
 public class Demo {
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException{
     Thread thread = new Thread(new Runnable(){
         public void run(){
             System.out.println("We are now in thread "+Thread.currentThread().getName());
@@ -11,6 +11,6 @@ public class Demo {
     System.out.println("We are in thread: "+ Thread.currentThread().getName()+" before starting a new thread.");
     thread.start();
     System.out.println("We are in thread: "+ Thread.currentThread().getName()+" after starting a new thread.");
-
+    Thread.sleep(10000);
     }
 }

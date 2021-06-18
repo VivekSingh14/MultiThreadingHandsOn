@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+//program for image processing using single thread and multithread.
 public class ImageProcess {
 
     public static final String SOURCE_FILE= "/home/vivek/Desktop/multiThreadingHandsOn/src/PerformanceOptimization/resources/many-flowers.jpg";
@@ -47,9 +48,9 @@ public class ImageProcess {
         int newBlue;
 
         if(isShadeOfGray(red, green, blue)){
-            newRed = Math.min(255, red + 10);
-            newGreen = Math.max(0, green-80);
-            newBlue = Math.max(0, blue-20);
+            newRed = Math.min(255, red + 0);
+            newGreen = Math.max(0, green-0);
+            newBlue = Math.max(0, blue);
         }else{
             newRed = red;
             newGreen = green;
